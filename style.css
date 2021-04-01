@@ -1,0 +1,31 @@
+:root {
+    --clr-normal: hsl(356, 100%, 66%);
+    --clr-hover: hsl(355, 100%, 74%);
+    --clr-body-light: hsl(240, 2%, 79%);
+    --clr-body-dark: hsl(207, 13%, 34%);
+    --clr-headings: hsl(208, 49%, 24%);
+    --clr-background: hsl(240, 10%, 16%);
+
+    --ff-heading: 3rem;
+    --ff-normal: 2rem;
+
+    --fs-normal: "Overpass", sans-serif;
+    --fs-heading: "Ubuntu", sans-serif;
+}
+
+
+
+/* Main */
+/* Future */
+.future{
+    display:flex;
+    flex-direction: column;
+}
+h2{
+    display:flex;
+    justify-content: center;
+}
+.future-content{
+    display:flex;
+    flex-direction:row-reverse;
+}
