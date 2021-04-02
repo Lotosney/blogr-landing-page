@@ -13,7 +13,10 @@
     --fs-heading: "Ubuntu", sans-serif;
 }
 
-
+* {
+    padding: 0;
+    margin: 0;
+}
 
 /* Main */
 /* Future */
@@ -21,11 +24,93 @@
     display:flex;
     flex-direction: column;
 }
-h2{
+.future-title h2{
     display:flex;
     justify-content: center;
+    color: var(--clr-headings);
+    font-family: var(--fs-normal);
+    padding-top: 4em;
 }
 .future-content{
     display:flex;
     flex-direction:row-reverse;
 }
+.future-text-container{
+     flex-direction:column;
+    margin-left: 10%;
+    margin-top:20%;
+    width:60%;
+}
+.future-text-box-one, .future-text-box-two{
+    font-family: var(--fs-normal);
+    font-size: 14px;
+    color: var(--clr-body-dark);
+    line-height: 1.5rem;
+    font-weight: 500;
+
+}
+.future-text-box-two{
+    margin-top:2em;
+}
+.future-text-box-one-title, .future-text-box-two-title{
+    padding-bottom: 1em;
+    font-family: var(--fs-heading);
+    color: var(--clr-headings);
+}
+.future-image {
+    width:50%;
+}
+.future-image img{
+    margin-left: 1%;
+}
+/*state-of-art*/
+
+ .state-of-art{
+    background-color: var(--clr-background);
+    margin: auto;
+    text-align: justify;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    background-image: url('images/bg-pattern-circles.svg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    z-index: 0;
+    background-size: 90em;
+    height:300px;
+  
+
+}
+
+.state-of-art-content{
+    display:flex;
+    z-index: 1; 
+
+}
+
+.phone-image{
+    width:50%;
+    z-index: 1;
+    margin-top: -12%;
+}
+
+.phone-text-title{
+    padding-top: 20%;
+    padding-bottom: 0.5em;
+    padding-right: 1em;
+    font-family: var(--fs-heading);
+    z-index: 1;
+
+}
+.phone-text{
+    width:50%;
+    margin-bottom:10%;
+    color:white;
+    padding-bottom: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
+    line-height: 1.5rem;
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    z-index: 1;
+} 
+
