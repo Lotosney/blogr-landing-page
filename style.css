@@ -17,7 +17,137 @@
     padding: 0;
     margin: 0;
 }
+/*header*/
+.drop-bar {
+    opacity: 0;
+    background: linear-gradient(to right top, orange, red);
+    border-radius: 10px;
+    position: absolute;
+    list-style-type: none;
+    transform: translateY(-3em);
+    transition: all 0.4s linear;
+    pointer-events: none;
 
+}
+
+.drop-link {
+    padding: 1em 2em;
+}
+
+.drop-bar li:hover {
+    background: pink;
+    color: black;
+}
+
+.nav-links a:focus+ul {
+    opacity: 1;
+    cursor: pointer;
+    pointer-events: all;
+    transform: translateY(0.5em);
+}
+
+/* end of drop-down menu */
+
+/* imp: header */
+
+header {
+    border-bottom-left-radius: 100px;
+    background-image: url("images/bg-pattern-intro.svg"),
+        linear-gradient(0.15turn, hsl(13, 89%, 74%), #ff2400 80%);
+    background-size: 130em;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.introduction {
+    margin: auto;
+    padding: 2em 5em;
+}
+
+.nav-bar {
+    list-style-type: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+#login {
+    color: white;
+}
+
+#sign-up {
+    color: var(--clr-normal);
+}
+
+#login:hover,
+#sign-up:hover {
+    color: rgb(156, 56, 20);
+}
+
+.nav-links:nth-last-child(2) {
+    margin-left: auto;
+}
+
+.nav-links:nth-child(2) {
+    display: none;
+}
+
+.attract {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 0em;
+    text-align: center;
+    color: white;
+}
+
+.intro h1 {
+    padding-bottom: 0.5em;
+    font-size: var(--ff-heading);
+    font-family: 'Overpass', sans-serif;
+}
+
+.intro p {
+    padding-bottom: 2em;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.actions button {
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+#start {
+    background: white;
+    color: var(--clr-normal);
+    padding: 0.7em 1em;
+    border-radius: 100px;
+}
+
+#learn {
+    background: transparent;
+    padding: 0.7em 1em;
+    border-radius: 100px;
+}
+
+.actions button:hover {
+    opacity: 0.8;
+}
 /* Main */
 /* Future */
 .future{
